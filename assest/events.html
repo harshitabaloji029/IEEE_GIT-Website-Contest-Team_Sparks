@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <style>
+    .container {
+      position: relative;
+
+      margin-left: 50px;
+      margin-right: 50px;
+
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      height: 100%;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+
+
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+
+    .tab {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 25%;
+      height: 300px;
+    }
+
+    
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 35px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+   
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 70%;
+      border-left: none;
+      height: 1100px;
+      display: none;
+
+    }
+
+    
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .images{
+    	display: inline;
+    	width: 27%;
+    	height: 20%;
+    	margin: 4px;
+    }
+
+    
+
+   
+  </style>
+</head>
+
+<body>
+  
+
+
+
+
+
+
+  <h2 style="text-align: center;">Special Events</h2>
+  <p>
+  	<ul>
+  		<li>In 2004 IEEE STB had the first inter-college Annual event INFINITY </li>
+  		<li>2006 onwards IEEE-GIT started its annual flagship event Paanchajanya(PCH).An event which attracted Delegates from Sangli, Kolhapur, Goa, Bengaluru, Hyderabad</li>
+  		<li>PCH 2015 celebrated 30yrs of initiation of a Student chapter at GIT. (20yrs of being active since 1995-96) and 10yrs of PCH Dr. D H Rao, Prof. Hemant Kamat, Dr. Raghavendra V Kulkarni, Dr. G R Udupi, Prof V P Gejji were felicitated.</li>
+  	</ul>
+  </p>
+
+  <div class="tab">
+    <button class="tablinks" onmouseover="openy(event, 'don')">2019</button>
+    <button class="tablinks" onmouseover="openy(event, 'Par')">2018</button>
+    <button class="tablinks" onmouseover="openy(event, 'Tok')">2017</button>
+    <button class="tablinks" onmouseover="openy(event, 'Tik')">2016</button>
+  </div>
+
+  <div id="don" class="tabcontent">
+    <h3>Student Leadership Program</h3>
+    <p>This is an annual membership drive event. Target audience: 1st and 3rd Semester students are attracted for membership, by supporting best performing students with finance</p>
+    <img class="images"   src="img\E4.jpg">
+    <h3>Paanchajanya</h3>
+    <p>IEEE-GIT conducted its annual flagship event PAANCHAYANYA. This is a regional level inter-college technical symposium for students. Idea presentation, Projects were major events</p>
+    <img class="images"   src="img\E15.jpg">
+    <h3>IEEE day</h3>
+    <p>IEEE-Day was celebrated. Technical Talk on "How to prepare and present technical paper" was given by Dr. Shewtha I. Goudra</p>
+    <img class="images"  src="img\E21.jpg">
+  </div>
+
+  <div id="Par" class="tabcontent">
+    <h3>Student Leadership Program</h3>
+    <p>This is an annual membership drive event. Target audience: 1st and 3rd Semester students are attracted for membership, by supporting best performing student with finance for membership. Faculty Advisor Prof. Abhishek Deshmukh presented about IEEE memberships its awareness, usage, advantages, opportunities to new students who took up membership</p>
+	<img class="images"  src="img\e2.jpg">
+    <h3>Paanchajanya</h3>
+    <p>IEEE-GIT conducted its annual flagship event PAANCHAJANYA. This is a regional level inter-college technical symposium for students. Idea presentation, Projects, Hackathon, are major events. Student and Members were benefitted.</p>
+	<img class="images"  src="img\E5.jpg">
+    <h3>APPLOYD - Learning APP competiton</h3>
+    <p>IEEE-GIT 2018 organises its first event APPLOYD - an event where participants have to present their detailed study on avilable Educational android apps</p>
+	<img class="images"  src="img\e1.jpg">
+  </div>
+
+  <div id="Tok" class="tabcontent">
+    <h3>Student Leadership Program</h3>
+    <p>This is an annual membership drive event. Target audience: 1st and 3rd Semester students are attracted for membership, by supporting best performing student with finance for membership. IEEE memberships its awareness, usage, advantages, opportunities were explained to new students who took up membership. Student Branch decided to support 3 new members with nearly 50% IEEE membership fees support.</p>
+	<img class="images"   src="img\E16.jpg">
+    <h3>Trigarti - Women's day celebration</h3>
+    <p>It was a part of IEEE-GIT WIE affinity group. Girl students get an opportunity to showcase their talent and creativity. On the topics like Women empowerment and social issues were taken and events were conducted. It helped in membership of girl students.</p>
+	<img class="images"   src="img\e3.jpg">
+    <h3>RASPBERRY-Pi Workshop</h3>
+    <p>IEEE-GIT for the first time conducted a week long workshop. It was a Hub Level event with students participating from various colleges in the region. Students learned to create projects and few submitted their UG projects using Raspberry-Pi. Few are still working on new projects. Members were benefitted.</p>
+	<img class="images"   src="img\E26.jpg">
+  </div>
+
+  <div id="Tik" class="tabcontent">
+    <h3>North Karnataka Student Young Professional WIE Congress-2016</h3>
+    <p>It was the first SYW Congress of NK Hub, all the SB came together and initiated thought process of subsection formation. It was a successful networking of the hub people. Membership drive also got a positive push.</p>
+    <img class="images"   src="img\E29.jpg">
+    <h3>Student Leadership Program</h3>
+    <p>This event is a part of membership drive. Target audience: 1st and 3rd Semester students are attracted for membership.</p>
+    <img class="images"   src="img\e6.jpg">
+     <h3>Poster Competition at IEEE Bangalore AGM-2015</h3>
+    <p>IEEE-GIT bagged 3rd prize and cash prize of Rs. 500/-</p>
+    <img class="images"   src="img\e5.png">
+  </div>
+
+  <div class="clearfix"></div>
+
+  <script>
+    function openy(evt, Name) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(Name).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+
+  <h2 style="text-align: center;">UDAAN - Women's day celebration 2020</h2>
+  <p>Panel discussion-Theme- “Careers beyond Engineering”.<br>It is a part of IEEE-GIT WIE affinity group.Girl students get an opportunity to showcase their creativity and business skills.<br>Flash mob, Fun events like one-minute games, food stalls, musical chairs etc. and Felicitation of non-teaching staff took place.<br>It helped in membershio of girl students</p>
+
+  <div class="container">
+    <img src="img\E20.jpg"
+      alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">
+      	<h1>IEEE GIT WOMEN SECTION</h1>
+      	<h3>"Women are leaders everywhere you look -- from the CEO who runs a Fortune 500 company to the housewife who raises her children and heads her household. Our country was built by strong women, and we will continue to break down walls and defy stereotypes"<br>     <h2>-Nancy Pelosi</h2></h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

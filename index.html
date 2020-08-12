@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css'>
+  <title>IEEE GIT</title>
+  <style>
+    .fakeimg {
+      height:300px;
+      background: #aaa;
+      max-width: 100%;
+      width: 500px;  
+    }
+
+    @import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.instagram:before {
+  background-color: rgb(204, 62, 98);
+}
+.social-btns .btn.instagram .fa {
+  color: rgb(211, 55, 55);
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.dribbble:before {
+  background-color: #f26798;
+}
+.social-btns .btn.dribbble .fa {
+  color: #f26798;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 68px;
+  height: 68px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  max-width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 600px;
+ 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  padding-top: 50px;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center"
+    style="margin-bottom:0; background-image: url(https://brand-experience.ieee.org/wp-content/uploads/2020/04/ieee-zoom-1920x1080-1-thumbnail.jpg);  background-size: cover ">
+    <h1 style="color: white; margin-top: 70px "><strong>IEEE GIT CHAPTER</strong></h1>
+    <p style="color: white;">Advancing Technology For Humanity</p>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="assest\about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="assest\events.html">Events</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#hello">Achievements</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="assest\execom.html">Execom 2020</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#hi">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1 style="text-align: center;">IEEE GIT section</h1>
+      <h3 style="text-align: center;">What is IEEE GIT</h3>
+      <p>
+      	<ul>
+      		<li>IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.</li>
+      		<li>IEEE and its members inspire a global community to innovate for a better tomorrow through its more than 419,000 members in over 160 countries, and its highly cited publications, conferences, technology standards, and professional and educational activities.</li>
+      		<li>IEEE is the trusted “voice” for engineering, computing, and technology information around the globe.</li>
+      	</ul>
+      </p>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assest\img\E3.jpg" alt="Avatar" style="width:100%;height:400px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Why to join IEEE GIT</h1> 
+            <p>
+            		It is one of the oldest student branches of North Karnataka region with an history of over two decades.<br>
+            		IEEE membership offers access to technical innovation, cutting-edge information, networking opportunities, and exclusive member benefits.<br>
+            		Members support IEEE's mission to advance technology for humanity and the profession, while memberships build a platform to introduce careers in technology to students around the world.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+    
+  <div class="container" style="margin-top:30px;">
+    <div class="row">
+     
+      <div class="col-12" style="margin-bottom: 50px;">
+        <h2>IEEE GIT Section </h2>
+        <h5 style="font-style: italic;"><b>Webinar on "What makes a website look professional"</b></h5>
+        <img class="fakeimg" src="assest\img\e8.jpg">
+        <p>A WEBSITE DESIGNING COMPETITION to encourage each and everyone from all the branches to participate in it.<br>
+           It helps to build creativity and professional skills by participating in it.</p>
+        <br>
+        <!--<h2>TITLE HEADING</h2>-->
+        <h5 style="font-style:italic;"><b>AVALANCHE</b></h5>
+        <img class="fakeimg" src="assest\img\E7.jpg">
+        <p>4 events were conducted by IEEE-GIT at AVALANCHE 2020</p>
+        <ol>
+        	<li>MicroMatics</li>
+        	<p>Embedded is the world!!. The world we live in is now being controlled by Microcontrollers</p>
+        	<li>Lazer Mazer</li>
+        	<p>A way to manipulate the path of light</p>
+        	<li>Flipped Logic</li>
+        	<p>Logic is the foundation of certanity of all the knowledge that we acquire</p>
+        	<li>Project Exhibition</li>
+        	<p>It always seems impossible until it's done.A good way to learn by applying all the creativity in a project. </p>
+        </ol>
+        <br>
+        <!--<h2>TITLE HEADING</h2>-->
+        <h5 style="font-style:italic;"><b>IEEE DAY Celebration with a Technical Talk on “How to prepare technical/ research papers”</b></h5>
+        <img class="fakeimg" src="assest\img\E11.jpg">
+        <p>
+        	<ul>
+        		<li>IEEE-Day was celebrated. Technical Talk on ‘How to prepare and present technical/ research paper’ was given by Dr. Shwetha I. Goudar.</li>
+        		<li>Members celebrated the day with Girls from Aarsh orphanage, essential goodies were donated to them (fruits, notebooks etc).</li>
+        		<li>This Social event was a part of ‘PES 0 Hunger Day’ celebration. IEEE GIT Belgaum Student Branch associated with PES Student Chapter of GIT Belgaum</li>
+        	</ul>
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <div id="hello">
+    	<div style="margin-top: 0px; margin-bottom: 20px; background-color: #F0FFFF; ">
+    		<h1 style="text-align: center; font-style: helvicta;">Achievements</h1>
+    		<p>
+    			<ul>
+    				<li style="font-style: italic;">One of the oldest student branches of North Karnataka region with an history of over two decades.</li>
+    				<li style="font-style: italic;">Global IEEE had allotted funds to conduct the “star program” in the year 2014-2015 for being one of the most active chapter in the region, using these funds we conducted motivational events in rural areas (i.e. the government schools). </li>
+    				<li style="font-style: italic;">For the year 2015-2016 Vardhana Kulkarni and Pranali Shinde from KLS GIT were selected as representatives for North Karnataka region.</li>
+    				<li style="font-style: italic;">Student Branch got seed amount in 2015-16 for IEEE Star program.</li>
+    				<li style="font-style: italic;">Three of our professors Dr. D.V.Kulkarni, Dr. V P Gejji and Prof. N.F.Deshpande were elected as senior members of IEEE.</li>
+    			</ul>
+    		</p>
+    		
+    	</div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assest\img\e13.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <!--<h5>NORTH KARNATAKA STUDENT YOUNG PROFESSIONAL WIE CONGRESS-2016</h5>
+            <p>It was the first SYW Congress of NK Hub, all the SB came together and initiated thought process of subsection formation. It was a successful networking of the hub people. Membership drive also got a positive push.</p>-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assest\img\e15.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4><b>POSTER PRESENTATION</b></h4>
+            <p><b>IEEE-GIT bagged 3rd prize and cash prize of Rs. 500/-</b></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assest\img\e9.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Abhishek Deshmukh sir won the #IEEEBLRAGM2018 hashtag competition at AGM 2018 Bangalore Section</h2>
+            <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+  <div id="hi">
+  <div class="jumbotron text-center" style="margin-bottom:0px;">
+  	<h2 style="margin-bottom: 30px;">Contact us:</h2>
+    <h5 style="margin-bottom: 15px;">Mr. Amogh Mathad (Student Activity Coordinator) :  <a href="tel: +917406827577
+      " target="_blank"><i class="fa fa-phone"> 7406827577
+      </i></a>
+    </h5>
+    <br>
+    <h5 style="margin-bottom: 40px;">Ms. Disha Shedshyal (WIE Vice Chair)  :  <a href="tel: +919380265708" target="_blank"><i class="fa fa-phone"> 9380265708</i></a>
+    </h5>
+    <h2 style="margin-bottom: 30px;">Follow us :</h2>
+    <div class="social-btns"><a class="btn facebook" href="https://www.facebook.com/IEEEGIT"><i class="fa fa-facebook"></i></a><a class="btn instagram"
+        href="https://www.instagram.com/ieee_git_official/?hl=en"><i class="fa fa-instagram"></i></a><a class="btn google" href="https://www.ieee.org/"><i class="fa fa-google"></i></a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+    crossorigin="anonymous"></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+</body>
+
+</html>
